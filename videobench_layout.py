@@ -103,6 +103,13 @@ class Ui_fenetrePrincipale(object):
         self.loglevel_combobox.insertItem(0, "info")
         self.loglevel_combobox.insertItem(1, "quiet")
 
+        self.python_path_setting = QtWidgets.QLabel()
+        self.python_path_setting.setText("Python Path : ")
+        self.python_path_setting.setStyleSheet('QLabel {background-color: transparent;}')
+        self.python_path_setting.setAlignment(QtCore.Qt.AlignRight)
+        self.python_path_combobox = QtWidgets.QComboBox()
+        self.python_path_combobox.insertItem(0, "python")
+        self.python_path_combobox.insertItem(1, "python3")
 
         self.png_resolution = QtWidgets.QLabel()
         self.png_resolution.setText("PNG Resolution : ")
@@ -139,7 +146,8 @@ class Ui_fenetrePrincipale(object):
         self.setting_grid.addWidget(self.loglevel_combobox, 4,1,1,1)        
         self.setting_grid.addWidget(self.png_resolution, 5,0,1,1)
         self.setting_grid.addLayout(self.png_resolution_hlayout, 5,1,1,1)
-
+        self.setting_grid.addWidget(self.python_path_setting, 6,0,1,1)
+        self.setting_grid.addWidget(self.python_path_combobox, 6,1,1,1)
 
     def widgets_and_layouts(self): 
 
