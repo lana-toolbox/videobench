@@ -100,8 +100,8 @@ class Ui_fenetrePrincipale(object):
         self.loglevel_setting.setStyleSheet('QLabel {background-color: transparent;}')
         self.loglevel_setting.setAlignment(QtCore.Qt.AlignRight)
         self.loglevel_combobox = QtWidgets.QComboBox()
-        self.loglevel_combobox.insertItem(0, "quiet")
-        self.loglevel_combobox.insertItem(1, "info")
+        self.loglevel_combobox.insertItem(0, "info")
+        self.loglevel_combobox.insertItem(1, "quiet")
 
 
         self.png_resolution = QtWidgets.QLabel()
@@ -113,7 +113,7 @@ class Ui_fenetrePrincipale(object):
         self.png_width = QtWidgets.QLineEdit()
         self.png_width.setAlignment(QtCore.Qt.AlignRight)
         self.png_width.setMaximumWidth(150)
-        self.png_width.setText("1280")
+        self.png_width.setText("1920")
         self.png_ = QtWidgets.QLabel()
         self.png_.setStyleSheet('QLabel {background-color: transparent;}')
         self.png_.setAlignment(QtCore.Qt.AlignLeft)
@@ -122,7 +122,7 @@ class Ui_fenetrePrincipale(object):
         self.png_height = QtWidgets.QLineEdit()
         self.png_height.setAlignment(QtCore.Qt.AlignRight)
         self.png_height.setMaximumWidth(150)
-        self.png_height.setText("720")
+        self.png_height.setText("1080")
         self.png_resolution_hlayout.addWidget(self.png_width)
         self.png_resolution_hlayout.addWidget(self.png_)
         self.png_resolution_hlayout.addWidget(self.png_height)
